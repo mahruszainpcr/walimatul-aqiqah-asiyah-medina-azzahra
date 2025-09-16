@@ -3,3 +3,22 @@
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
 }
+  .bunga-animasi {
+    animation: mutar 20s linear infinite, napas 4s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  @keyframes mutar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes napas {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
