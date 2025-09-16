@@ -126,7 +126,7 @@ function App() {
           className="text-2xl md:text-3xl font-bold text-[#ac1ed6] text-center"
           data-aos="zoom-in"
         >
-          Aisyah Medina Azzahra
+          'Aisyah Medina Azzahra
         </p>
 
         <p
@@ -141,7 +141,7 @@ function App() {
           data-aos="fade-up"
         >
           <h3 className="text-xl font-semibold text-center text-[#ac1ed6] mb-6">
-            🌸 Aisyah Medina Azzahra{" "}
+            🌸 'Aisyah Medina Azzahra{" "}
             <span className="text-sm text-gray-400">(عائشة مدينة الزهراء)</span>
           </h3>
 
@@ -150,7 +150,7 @@ function App() {
               className="bg-[#090607] p-4 rounded-lg shadow-sm"
               data-aos="fade-right"
             >
-              <h4 className="text-[#ac1ed6] font-bold mb-2">Aisyah (عائشة)</h4>
+              <h4 className="text-[#ac1ed6] font-bold mb-2">'Aisyah (عائشة)</h4>
               <p>Makna: Hidup bahagia, sejahtera.</p>
               <p>Nama istri Rasulullah ﷺ, Ummul Mu’minin.</p>
             </div>
@@ -194,7 +194,7 @@ function App() {
         >
           <h4 className="text-[#c26e73] font-semibold mb-2">Doa & Harapan</h4>
           <p className="text-sm text-gray-300 italic">
-            “Ya Allah, jadikanlah Aisyah Medina Azzahra anak yang hidup dalam
+            “Ya Allah, jadikanlah 'Aisyah Medina Azzahra anak yang hidup dalam
             kebahagiaan, berhati suci dan bercahaya dengan iman, serta membawa
             kebaikan seperti kota Madinah yang penuh berkah.”
           </p>
