@@ -109,14 +109,17 @@ function App() {
       )}
       <section className="bg-[#090607] text-white font-montserrat px-6 py-10 max-w-2xl mx-auto space-y-6">
         <p className="text-sm text-gray-300 text-center" data-aos="fade-down">
-          Alhamdulillaahil-ladzii bini’matihi tatimmush-saalihaat.
+          بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ <br />
+          Assalamu’alaikum Warahmatullahi Wabarakatuh Alhamdulillaahil-ladzii
+          bini’matihi tatimmush-saalihaat.
         </p>
 
         <h2
           className="text-center text-lg text-white font-semibold"
           data-aos="fade-up"
         >
-          Telah Lahir Buah Hati Kami
+          Segala puji bagi Allah yang telah menganugerahkan kepada kami seorang
+          putri yang kami beri nama:
         </h2>
 
         <p
@@ -260,21 +263,12 @@ function App() {
           className="relative z-10 max-w-xl space-y-8 text-left font-sans"
           data-aos="fade-up"
         >
-          <h1
-            className="text-4xl font-extrabold text-[#ac1ed6] leading-tight tracking-wide"
-            data-aos="fade-down"
-          >
-            Assalamu'alaikum warahmatullah wabarakatuh
-          </h1>
-
           <p
             className="text-base text-gray-300 italic leading-relaxed tracking-normal"
             data-aos="fade-up"
           >
-            Dengan izin Allah ﷻ, dan dengan penuh kerendahan hati,
-            <br />
-            kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk berkenan hadir
-            dalam acara aqiqah anak kami.
+            Sebagai wujud syukur kepada Allah ﷻ, insyaAllah kami bermaksud
+            menyelenggarakan Aqiqah sesuai tuntuan Rasulullah ﷺ.
           </p>
 
           <div
@@ -386,22 +380,15 @@ function App() {
 
         {/* Konten Utama */}
         <div className="relative z-10 max-w-xl space-y-6" data-aos="zoom-in">
-          <h2
-            className="text-3xl font-bold text-[#ac1ed6]"
-            data-aos="fade-down"
-          >
-            Jazakumullah khairan katsiran
-          </h2>
           <p
             className="text-sm text-gray-300 italic"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Merupakan suatu kebahagiaan dan kehormatan bagi kami,
+            Atas doa dan kehadirannya, kami ucapkan Jazakumullahu Khairan.{" "}
             <br />
-            apabila teman-teman/bapak/ibu berkenan hadir dan memberikan do'a.
+            Wassalamu’alaikum Warahmatullahi Wabarakatuh
           </p>
-
           <div
             className="mt-6 bg-[#221f20] p-4 rounded-lg shadow text-center space-y-2"
             data-aos="fade-up"
@@ -414,7 +401,6 @@ function App() {
               Bapak Mahrus & Ibu Zahiyah
             </p>
           </div>
-
           <p
             className="text-xs text-gray-500 italic mt-6"
             data-aos="fade-up"

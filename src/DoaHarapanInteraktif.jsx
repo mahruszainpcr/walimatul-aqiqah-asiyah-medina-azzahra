@@ -50,8 +50,7 @@ function DoaHarapanInteraktif() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Kirimkan doa terbaik Anda untuk Aisyah Medina Azzahra. Setiap kata
-          adalah berkah yang berarti bagi keluarga kami.
+         Kami memohon Bapak/Ibu/Saudara/i untuk turut mendoakan putri kami agar kelak menjadi anak yang shalihah, berbakti kepada orang tua, serta bermanfaat bagi agama dan umat.
         </p>
 
         {/* Form */}
