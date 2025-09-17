@@ -98,27 +98,26 @@ function DoaHarapanInteraktif() {
           <h3 className="text-lg font-semibold text-[#c26e73]">
             💌 Doa dari Tamu
           </h3>
-          {listDoa.length === 0 ? (
-            <p className="text-sm text-gray-400 italic">
-              Belum ada doa yang masuk.
-            </p>
-          ) : (
-            listDoa.map((item) => (
-              <div
-                key={item.id}
-                className="bg-[#221f20] p-4 rounded shadow text-left"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <p className="text-sm text-[#ac1ed6] font-semibold">
-                  {item.nama}
-                </p>
-                <p className="text-sm text-gray-300 italic mt-1">
-                  “{item.doa}”
-                </p>
-              </div>
-            ))
-          )}
+          <div className="max-h-96 overflow-y-auto space-y-4 pr-2 scrollbar-thin scrollbar-thumb-[#ac1ed6] scrollbar-track-[#1a1819]">
+  {listDoa.length === 0 ? (
+    <p className="text-sm text-gray-400 italic">
+      Belum ada doa yang masuk.
+    </p>
+  ) : (
+    listDoa.map((item) => (
+      <div
+        key={item.id}
+        className="bg-[#221f20] p-4 rounded shadow text-left"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <p className="text-sm text-[#ac1ed6] font-semibold">{item.nama}</p>
+        <p className="text-sm text-gray-300 italic mt-1">“{item.doa}”</p>
+      </div>
+    ))
+  )}
+</div>
+
         </div>
       </div>
     </section>
