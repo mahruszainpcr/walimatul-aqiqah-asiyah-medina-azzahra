@@ -285,7 +285,7 @@ function App() {
                 <div>
                   <p className="font-semibold text-white">Tanggal</p>
                   <p>
-                    Minggu,{" "}
+                    Sabtu,{" "}
                     <span className="text-[#e91e63] font-medium">
                       20 September 2025
                     </span>
@@ -300,7 +300,7 @@ function App() {
                   <p>
                     Pukul{" "}
                     <span className="text-[#e91e63] font-medium">
-                      11.00 WIB – Selesai
+                      11.00 WIB – 15:00
                     </span>
                   </p>
                 </div>
