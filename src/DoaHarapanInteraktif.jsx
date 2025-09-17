@@ -50,7 +50,9 @@ function DoaHarapanInteraktif() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-         Kami memohon Bapak/Ibu/Saudara/i untuk turut mendoakan putri kami agar kelak menjadi anak yang shalihah, berbakti kepada orang tua, serta bermanfaat bagi agama dan umat.
+          Kami memohon Bapak/Ibu/Saudara/i untuk turut mendoakan putri kami agar
+          kelak menjadi anak yang shalihah, berbakti kepada orang tua, serta
+          bermanfaat bagi agama dan umat.
         </p>
 
         {/* Form */}
@@ -95,29 +97,38 @@ function DoaHarapanInteraktif() {
 
         {/* List Doa */}
         <div className="mt-8 space-y-4" data-aos="fade-up" data-aos-delay="200">
-          <h3 className="text-lg font-semibold text-[#c26e73]">
+          <h3 className="text-lg font-semibold text-[#c26e73] text-center">
             💌 Doa dari Tamu
           </h3>
-          <div className="max-h-96 overflow-y-auto space-y-4 pr-2 scrollbar-thin scrollbar-thumb-[#ac1ed6] scrollbar-track-[#1a1819]">
-  {listDoa.length === 0 ? (
-    <p className="text-sm text-gray-400 italic">
-      Belum ada doa yang masuk.
-    </p>
-  ) : (
-    listDoa.map((item) => (
-      <div
-        key={item.id}
-        className="bg-[#221f20] p-4 rounded shadow text-left"
-        data-aos="fade-up"
-        data-aos-delay="300"
-      >
-        <p className="text-sm text-[#ac1ed6] font-semibold">{item.nama}</p>
-        <p className="text-sm text-gray-300 italic mt-1">“{item.doa}”</p>
-      </div>
-    ))
-  )}
-</div>
 
+          <div className="relative w-full overflow-x-auto px-4 py-4 bg-[#1a1819] rounded-lg shadow-inner scrollbar-thin scrollbar-thumb-[#ac1ed6] scrollbar-track-[#090607]">
+            <div className="flex gap-4 animate-marquee">
+              {listDoa.length === 0 ? (
+                <p className="text-sm text-gray-400 italic text-center w-full">
+                  Belum ada doa yang masuk.
+                </p>
+              ) : (
+                listDoa.map((item) => (
+                  <div
+                    key={item.id}
+                    className="min-w-[16rem] max-w-[16rem] bg-[#221f20] p-4 rounded-xl shadow text-left break-words flex-shrink-0"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-8 h-8 rounded-full bg-[#ac1ed6] flex items-center justify-center text-white text-xs font-bold">
+                        {item.nama.charAt(0).toUpperCase()}
+                      </div>
+                      <p className="text-sm text-[#ac1ed6] font-semibold">
+                        {item.nama}
+                      </p>
+                    </div>
+                    <p className="text-xs text-gray-300 italic leading-relaxed">
+                      “{item.doa}”
+                    </p>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </section>

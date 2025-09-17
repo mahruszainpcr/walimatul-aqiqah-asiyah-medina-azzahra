@@ -40,3 +40,21 @@
   background-color: #ac1ed6;
   border-radius: 4px;
 }
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 60s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 60s linear infinite;
+}

@@ -351,32 +351,8 @@ function App() {
       </section>
 
       <DoaHarapanInteraktif />
-      <section className="bg-[#090607] text-white font-montserrat px-6 py-16 min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden">
+      <section className="text-white font-montserrat px-6 py-16 min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden">
         {/* Dekorasi SVG Bunga */}
-        <div
-          className="absolute top-0 right-0 w-32 h-32 opacity-30"
-          data-aos="fade-down"
-        >
-          <svg
-            viewBox="0 0 64 64"
-            fill="#c26e73"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M32 4C20 20 44 20 32 44C44 28 20 28 32 4Z" />
-          </svg>
-        </div>
-        <div
-          className="absolute bottom-0 left-0 w-32 h-32 opacity-30"
-          data-aos="fade-up"
-        >
-          <svg
-            viewBox="0 0 64 64"
-            fill="#ac1ed6"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="32" cy="32" r="30" />
-          </svg>
-        </div>
 
         {/* Konten Utama */}
         <div className="relative z-10 max-w-xl space-y-6" data-aos="zoom-in">
