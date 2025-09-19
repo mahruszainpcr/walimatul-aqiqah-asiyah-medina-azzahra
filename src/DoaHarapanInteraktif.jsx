@@ -39,27 +39,20 @@ function DoaHarapanInteraktif() {
   };
 
   return (
-    <section className="bg-[#090607] text-white font-montserrat px-6 py-10 min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="max-w-xl w-full space-y-6" data-aos="fade-up">
+    <>
+      <div
+        className="relative min-h-screen bg-[#090607] text-white font-montserrat overflow-hidden py-10 flex flex-col items-center justify-center text-center"
+        data-aos="fade-up"
+      >
         {/* Header */}
-        <h2 className="text-2xl font-bold text-[#ac1ed6]" data-aos="fade-down">
-          ✨ Doa & Harapan
-        </h2>
-        <p
-          className="text-sm text-gray-300 italic"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          Kami memohon Bapak/Ibu/Saudara/i untuk turut mendoakan putri kami agar
-          kelak menjadi anak yang shalihah, berbakti kepada orang tua, serta
-          bermanfaat bagi agama dan umat.
+        <h2 className="text-2xl font-bold text-[#ac1ed6]">✨ Doa & Harapan</h2>
+        <p className="text-sm text-gray-300 italic">
+          Kirimkan doa terbaik Anda untuk Aisyah Medina Azzahra. Setiap kata
+          adalah berkah yang berarti bagi keluarga kami.
         </p>
 
         {/* Form */}
-        <div
-          className="bg-[#221f20] p-6 rounded-lg shadow space-y-4"
-          data-aos="zoom-in"
-        >
+        <div className="bg-[#221f20] p-6 rounded-lg shadow space-y-4">
           {submitted ? (
             <p className="text-green-400 text-sm">
               Terima kasih atas doa dan harapan yang telah Anda kirimkan 💖
@@ -73,7 +66,6 @@ function DoaHarapanInteraktif() {
                 onChange={(e) => setNama(e.target.value)}
                 required
                 className="w-full px-4 py-2 rounded bg-[#090607] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ac1ed6]"
-                data-aos="fade-right"
               />
               <textarea
                 placeholder="Tulis doa & harapan Anda..."
@@ -82,56 +74,61 @@ function DoaHarapanInteraktif() {
                 required
                 rows={4}
                 className="w-full px-4 py-2 rounded bg-[#090607] text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#ac1ed6]"
-                data-aos="fade-left"
               />
               <button
                 type="submit"
                 className="w-full py-2 rounded bg-gradient-to-r from-[#ac1ed6] to-[#c26e73] text-white font-semibold hover:opacity-90 transition"
-                data-aos="fade-up"
               >
                 Kirim Doa
               </button>
             </form>
           )}
         </div>
+      </div>
+      <section className="bg-[#090607] text-white font-montserrat px-6 py-10 min-h-screen flex flex-col items-center justify-center text-center">
+        <div className="max-w-xl w-full space-y-6">
+          {/* List Doa */}
+          <div
+            className="mt-8 space-y-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 className="text-lg font-semibold text-[#c26e73] text-center">
+              💌 Doa dari Tamu
+            </h3>
 
-        {/* List Doa */}
-        <div className="mt-8 space-y-4" data-aos="fade-up" data-aos-delay="200">
-          <h3 className="text-lg font-semibold text-[#c26e73] text-center">
-            💌 Doa dari Tamu
-          </h3>
-
-          <div className="relative w-full overflow-x-auto px-4 py-4 bg-[#1a1819] rounded-lg shadow-inner scrollbar-thin scrollbar-thumb-[#ac1ed6] scrollbar-track-[#090607]">
-            <div className="flex gap-4 animate-marquee">
-              {listDoa.length === 0 ? (
-                <p className="text-sm text-gray-400 italic text-center w-full">
-                  Belum ada doa yang masuk.
-                </p>
-              ) : (
-                listDoa.map((item) => (
-                  <div
-                    key={item.id}
-                    className="min-w-[16rem] max-w-[16rem] bg-[#221f20] p-4 rounded-xl shadow text-left break-words flex-shrink-0"
-                  >
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 rounded-full bg-[#ac1ed6] flex items-center justify-center text-white text-xs font-bold">
-                        {item.nama.charAt(0).toUpperCase()}
+            <div className="relative w-full overflow-x-auto px-4 py-4 bg-[#1a1819] rounded-lg shadow-inner scrollbar-thin scrollbar-thumb-[#ac1ed6] scrollbar-track-[#090607]">
+              <div className="flex gap-4 animate-marquee">
+                {listDoa.length === 0 ? (
+                  <p className="text-sm text-gray-400 italic text-center w-full">
+                    Belum ada doa yang masuk.
+                  </p>
+                ) : (
+                  listDoa.map((item) => (
+                    <div
+                      key={item.id}
+                      className="min-w-[16rem] max-w-[16rem] bg-[#221f20] p-4 rounded-xl shadow text-left break-words flex-shrink-0"
+                    >
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="w-8 h-8 rounded-full bg-[#ac1ed6] flex items-center justify-center text-white text-xs font-bold">
+                          {item.nama.charAt(0).toUpperCase()}
+                        </div>
+                        <p className="text-sm text-[#ac1ed6] font-semibold">
+                          {item.nama}
+                        </p>
                       </div>
-                      <p className="text-sm text-[#ac1ed6] font-semibold">
-                        {item.nama}
+                      <p className="text-sm text-gray-300 italic leading-relaxed">
+                        “{item.doa}”
                       </p>
                     </div>
-                    <p className="text-xs text-gray-300 italic leading-relaxed">
-                      “{item.doa}”
-                    </p>
-                  </div>
-                ))
-              )}
+                  ))
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
